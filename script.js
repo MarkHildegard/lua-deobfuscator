@@ -29,4 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
             outputCode.value = "⚠ Invalid obfuscated code!";
         }
     });
-}); 
+
+    // GSAP Animation
+    gsap.from(".glitch", { opacity: 0, y: -20, duration: 1, ease: "power2.out" });
+    gsap.from(".intro", { opacity: 0, y: 10, delay: 0.5, duration: 1 });
+    gsap.from("textarea", { opacity: 0, scale: 0.9, delay: 1, duration: 0.8 });
+    gsap.from(".btn", { opacity: 0, y: 10, stagger: 0.2, delay: 1.5, duration: 0.6 });
+});
