@@ -1,79 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #090909;
-    color: #fff;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #090909;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
 }
 
 .container {
-    max-width: 600px;
-    padding: 20px;
+  max-width: 600px;
+  padding: 20px;
 }
 
 h1.glitch {
-    font-size: 2rem;
-    font-weight: 700;
-    position: relative;
-    text-transform: uppercase;
-    color: #0ff;
-    animation: flicker 2s infinite alternate;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  color: #0ff;
+  animation: flicker 2s infinite alternate;
 }
 
 @keyframes flicker {
-    0% { text-shadow: 0px 0px 10px #0ff, 0px 0px 20px #00f; }
-    50% { text-shadow: 0px 0px 5px #0ff, 0px 0px 15px #00f; }
-    100% { text-shadow: 0px 0px 10px #0ff, 0px 0px 20px #00f; }
+  0% { text-shadow: 0px 0px 10px #0ff, 0px 0px 20px #00f; }
+  50% { text-shadow: 0px 0px 5px #0ff, 0px 0px 15px #00f; }
+  100% { text-shadow: 0px 0px 10px #0ff, 0px 0px 20px #00f; }
 }
 
 p.intro {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    opacity: 0.8;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  opacity: 0.8;
 }
 
 textarea {
-    width: 100%;
-    height: 120px;
-    background: #111;
-    color: #0ff;
-    border: 2px solid #0ff;
-    padding: 10px;
-    font-size: 14px;
-    resize: none;
-    outline: none;
-    margin-bottom: 10px;
+  width: 100%;
+  height: 120px;
+  background: #111;
+  color: #0ff;
+  border: 2px solid #0ff;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+  outline: none;
+  margin-bottom: 10px;
 }
 
 .button-group {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {
-    flex: 1;
-    margin: 10px 5px;
-    padding: 12px;
-    background: #0ff;
-    color: #090909;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    border: none;
-    font-size: 14px;
+  flex: 1;
+  margin: 10px 5px;
+  padding: 12px;
+  background: #0ff;
+  color: #090909;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  opacity: 1; /* explizit sichtbar */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
 .btn:hover {
-    background: #f00;
-    color: #fff;
-    transform: scale(1.1);
+  background: #f00;
+  color: #fff;
+  transform: scale(1.1);
 }
