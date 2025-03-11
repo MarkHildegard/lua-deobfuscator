@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musik-Website</title>
+    <title>Lua Code Obfuscator & Deobfuscator</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Meine Musik-Website 🎵</h1>
-    
-    <div id="player">
-        <h2 id="song-title">Kein Song ausgewählt</h2>
-        <audio id="audio" controls></audio>
+    <div class="container">
+        <h1 class="glitch">Lua Code Obfuscator & Deobfuscator</h1>
+        <p class="intro">Protect or decode Lua scripts with a single click!</p>
+        
+        <textarea id="input-code" placeholder="Paste your Lua code here..."></textarea>
+        <button id="obfuscate-btn" class="btn">Obfuscate</button>
+        <button id="deobfuscate-btn" class="btn">Deobfuscate</button>
+        <textarea id="output-code" placeholder="Result will appear here..." readonly></textarea>
     </div>
-
-    <h3>Playlist:</h3>
-    <ul id="playlist">
-        <li onclick="playSong('song1.mp3', 'Song 1')">🎶 Song 1</li>
-        <li onclick="playSong('song2.mp3', 'Song 2')">🎶 Song 2</li>
-        <li onclick="playSong('song3.mp3', 'Song 3')">🎶 Song 3</li>
-    </ul>
-
-    <script src="script.js"></script>
 </body>
 </html>
